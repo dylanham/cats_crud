@@ -1,0 +1,12 @@
+= form_for @cat do |f|
+  = f.label :name
+  = f.text_field :name
+  .div
+    = f.label :breed
+    = f.text_field :breed
+  .div
+    = f.label :owner
+    = f.text_field :owner
+  .div
+    = f.submit
+    = link_to 'back', cats_path
